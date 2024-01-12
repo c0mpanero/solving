@@ -1,5 +1,2 @@
-def accum(text):
-    text = text.lower()
-    return "-".join(
-        char.capitalize() + char*n for n, char in enumerate(text)
-    )
+def move_zeros(lst):
+    return [n for n in lst if n != 0] + [0 for _ in range(lst.count(0))]
